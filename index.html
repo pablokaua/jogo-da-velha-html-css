@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/options.css">
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="stylesheet" href="./css/game.css">
+</head>
+<body>
+
+    <!-- Define qual jogador irá começar a jogar -->
+    <div class="player-container">
+        <header>Jogo da Velha</header>
+        <div class="player-select">
+            <h2>Selecione qual jogador você deseja ser:</h2>
+            <!-- Opções de jogadores: X ou O -->
+            <div class="options">
+                <button class="playerX" value="">Jogador (X)</button>
+                <button class="playerO" value="">Jogador (O)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cria o tabuleiro onde ocorrerá a partida -->
+    <div class="board">
+        <!-- Mostra jogador atual que deve realizar a jogada -->
+        <div class="details">
+            <span class="currentX">Vez de X</span>
+            <span class="currentO">Vez de O</span>
+        </div>
+        <!-- Tabuleiro -->
+        <div class="board-area">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+
+    <!-- Mostra o resultado final da partida (vitoria: X ou O, Empate) -->
+    <div class="result">
+        <div class="won-text"><p></p></div>
+        <!-- Reinicia as informações do tabuleiro e começa uma nova partida -->
+        <div class="btnRestart">
+            <button>Recomeçar</button>
+        </div>
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

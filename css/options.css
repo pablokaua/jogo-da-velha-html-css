@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+.player-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2f3640;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    display: none;
+}
+
+.player-container header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7f8fa6;
+}
+
+.player-container h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+
+.player-container .options {
+    display: flex;
+    width: 100%;   
+}
+
+.options button {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background-color: #7f8fa6;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+.options button:hover {
+    transform: scale(0.9);
+}
+
+.options button.playerX {
+    margin-right: 5px;
+}
+
+.options button.playerO {
+    margin-left: 5px;
+}
